@@ -46,7 +46,7 @@ public class User {
         try {
             isNumber = parseDouble(getInput());
         } catch (NumberFormatException e) {
-            System.out.println("Invalid number")
+            System.out.println("Invalid number");
         }
     }
 }
