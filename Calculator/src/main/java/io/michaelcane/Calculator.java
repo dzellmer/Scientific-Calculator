@@ -25,7 +25,7 @@ public class Calculator {
         return value1 - value2;
     }
 
-    public double divide(double value1, double value2) {
+    public static double divide(double value1, double value2) {
         /**
          * This method should take two values (double)
          * and divides the first by the second.
@@ -185,9 +185,3 @@ public class Calculator {
         commands.doTheThing();
     }
 }
-
-
-
-
-
-
