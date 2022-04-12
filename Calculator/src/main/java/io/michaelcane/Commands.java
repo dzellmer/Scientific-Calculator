@@ -2,7 +2,6 @@ package io.michaelcane;
 
 public class Commands {
 
-    Calculator calculator = new Calculator();
     Display display = new Display();
     User user = new User();
 
@@ -51,65 +50,65 @@ public class Commands {
              * The switch statement for the above enum.
              */
             case COSINE:
-                calculator.cosine(user.isNumber);
+                Calculator.cosine(user.isNumber);
                 System.out.println("It's working!");
                 break;
             case DIVIDE:
-                calculator.divide(display.getState(), user.isNumber);
+                Calculator.divide(display.getState(), user.isNumber);
                 break;
             case FACTORIAL:
-                calculator.factorial(user.isNumber);
+                Calculator.factorial(user.isNumber);
                 break;
             case INVERSECOSINE:
-                calculator.inverseCosine(user.isNumber);
+                Calculator.inverseCosine(user.isNumber);
                 break;
             case INVERSELOGARITHM:
-                calculator.inverseLogarithm(user.isNumber);
+                Calculator.inverseLogarithm(user.isNumber);
                 break;
             case INVERSENATURALLOG:
-                calculator.inverseNaturalLog(user.isNumber);
+                Calculator.inverseNaturalLog(user.isNumber);
                 break;
             case INVERSESINE:
-                calculator.inverseSine(user.isNumber);
+                Calculator.inverseSine(user.isNumber);
                 break;
             case INVERSETANGENT:
-                calculator.inverseTangent(user.isNumber);
+                Calculator.inverseTangent(user.isNumber);
                 break;
             case INVERTPOSITIVEANDNEGATIVE:
-                calculator.invertPositiveAndNegative(user.isNumber);
+                Calculator.invertPositiveAndNegative(user.isNumber);
                 break;
             case LOGARITHM:
-                calculator.logarithm(user.isNumber);
+                Calculator.logarithm(user.isNumber);
                 break;
             case LOGBASE2:
-                calculator.logBase2(user.isNumber);
+                Calculator.logBase2(user.isNumber);
                 break;
             case MULTIPLY:
-                calculator.multiply(display.getState(), user.isNumber);
+                Calculator.multiply(display.getState(), user.isNumber);
                 break;
             case NATURALLOGARITHM:
-                calculator.naturalLogarithm(user.isNumber);
+                Calculator.naturalLogarithm(user.isNumber);
                 break;
             case SINE:
-                calculator.sine(user.isNumber);
+                Calculator.sine(user.isNumber);
                 break;
             case SQUARE:
-                calculator.square(user.isNumber);
+                Calculator.square(user.isNumber);
                 break;
             case SQUAREROOT:
-                calculator.squareRoot(user.isNumber);
+                Calculator.squareRoot(user.isNumber);
                 break;
             case SUM:
-                calculator.sum(display.getState(), user.isNumber);
+                Calculator.sum(display.getState(), user.isNumber);
                 break;
             case SUBTRACT:
-                calculator.subtract(display.getState(), user.isNumber);
+                Calculator.subtract(display.getState(), user.isNumber);
                 break;
             case TANGENT:
-                calculator.tangent(user.isNumber);
+                Calculator.tangent(user.isNumber);
                 break;
             case VARIABLEEXPONENTIATION:
-                calculator.variableExponentiation(display.getState(), user.isNumber);
+                Calculator.variableExponentiation(display.getState(), user.isNumber);
                 break;
             case RECALLMEMORY:
                 System.out.println(user.getMemory());
