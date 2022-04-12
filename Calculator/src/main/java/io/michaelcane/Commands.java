@@ -30,6 +30,7 @@ public class Commands {
         INVERSETANGENT,
         INVERTPOSITIVEANDNEGATIVE,
         LOGARITHM,
+        LOGBASE2,
         MULTIPLY,
         NATURALLOGARITHM,
         SETDISPLAYMODE,
@@ -79,6 +80,9 @@ public class Commands {
                 break;
             case LOGARITHM:
                 calculator.logarithm(user.isNumber);
+                break;
+            case LOGBASE2:
+                calculator.logBase2(user.isNumber);
                 break;
             case MULTIPLY:
                 calculator.multiply(display.getState(), user.isNumber);

@@ -32,8 +32,9 @@ public class Calculator {
          */
         if(value2 == 0) {
             displayError();
+        } else {
+            return value1 / value2;
         }
-        return value1 / value2;
     }
 
     public static double multiply(double value1, double value2) {
@@ -55,7 +56,11 @@ public class Calculator {
         /**
          * This method should provide the square root of a value (double).
          */
-        return Math.sqrt(value1);
+        if (value1 < 0) {
+            displayError();
+        } else {
+            return Math.sqrt(value1);
+        }
     }
 
     public static double variableExponentiation(double value1, double value2) {
@@ -123,6 +128,17 @@ public class Calculator {
         return Math.log10(value1);
     }
 
+    public static double logBase2(double value1) {
+        /**
+         * This will evaluate to the base 2 value of the number provided.
+         */
+        if (value1 < 0) {
+            displayError();
+        } else {
+            return Math.log10(value1) / Math.log10(2);
+        }
+    }
+
     public static double naturalLogarithm(double value1) {
         /**
          * This will evaluate to the invers of the Log.
@@ -165,9 +181,6 @@ public class Calculator {
         commands.giveCommand(Commands.Command.COSINE);
         commands.doTheThing();
     }
-
-
-
 }
 
 

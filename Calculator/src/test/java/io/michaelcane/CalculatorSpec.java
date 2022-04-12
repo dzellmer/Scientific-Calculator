@@ -3,6 +3,7 @@ package io.michaelcane;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 /**
  * This is the TEST document for the Calculator.java class
@@ -173,6 +174,25 @@ public class CalculatorSpec {
         double expectedValue = 0.9542425094393249;
         double actualValue = calculator.logarithm(9);
         assertEquals("This should evaluate to 0.9542425094393249", expectedValue, actualValue, delta);
+    }
+
+    @Test
+    public void test$log2Valid() {
+        /**
+         * This will evaluate to the base 10 value of the number provided.
+         */
+        double expectedValue = 4.0874628412503394;
+        double actualValue = calculator.logarithm(17);
+        assertEquals("This should evaluate to 4.08746284125033949", expectedValue, actualValue, delta);
+    }
+
+    @Test
+    public void test$log2Invalid() {
+        /**
+         * This will evaluate to the base 10 value of the number provided.
+         */
+        double actualValue = calculator.logarithm(-5);
+        assertNull("This should evaluate to Null", actualValue);
     }
 
     @Test
