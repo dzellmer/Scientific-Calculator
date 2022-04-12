@@ -32,6 +32,7 @@ public class Calculator {
          */
         if(value2 == 0) {
             displayError();
+            return -1;
         } else {
             return value1 / value2;
         }
@@ -58,6 +59,7 @@ public class Calculator {
          */
         if (value1 < 0) {
             displayError();
+            return -1;
         } else {
             return Math.sqrt(value1);
         }
@@ -134,6 +136,7 @@ public class Calculator {
          */
         if (value1 < 0) {
             displayError();
+            return -1;
         } else {
             return Math.log10(value1) / Math.log10(2);
         }
@@ -150,7 +153,7 @@ public class Calculator {
         /**
          * This will give the factorial for the provided value.
          */
-        if(value1 == 1) {
+        if (value1 == 1) {
             return 1;
         }
         return value1 * (factorial(value1-1));
@@ -170,7 +173,7 @@ public class Calculator {
         return Math.pow(10, value1);
     }
 
-    private void displayError() {
+    private static void displayError() {
         /**
          * Checks if dividing by Zero
          */
