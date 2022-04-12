@@ -182,7 +182,7 @@ public class CalculatorSpec {
          * This will evaluate to the base 10 value of the number provided.
          */
         double expectedValue = 4.0874628412503394;
-        double actualValue = calculator.logarithm(17);
+        double actualValue = calculator.logBase2(17);
         assertEquals("This should evaluate to 4.08746284125033949", expectedValue, actualValue, delta);
     }
 
@@ -191,8 +191,8 @@ public class CalculatorSpec {
         /**
          * This will evaluate to the base 10 value of the number provided.
          */
-        double actualValue = calculator.logarithm(-5);
-        assertNull("This should evaluate to Null", actualValue);
+        double actualValue = calculator.logBase2(-5);
+        assertEquals("This should evaluate to -1", actualValue, -1, delta);
     }
 
     @Test
