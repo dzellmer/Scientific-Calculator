@@ -5,8 +5,6 @@ import java.util.Scanner;
 import static java.lang.Double.parseDouble;
 
 public class User {
-
-    Commands commands = new Commands();
     /**
      * This is the Memory that can be Set, Recalled, and Cleared.
      */
@@ -48,7 +46,7 @@ public class User {
         try {
             isNumber = parseDouble(getInput());
         } catch (NumberFormatException e) {
-            commands.doTheThing();
+            System.out.println("Invalid number")
         }
     }
 }
